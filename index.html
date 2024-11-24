@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .comman{
+                display: block;
+                float: left;
+                width: 200px;
+                height: 200px;
+                border: 10px solid #000;
+                color: #fff;
+                text-align: center;
+                line-height: 200px;
+                font-size: 1em;
+                border-radius: 150px;
+                animation-name: bouncing;
+                animation-duration: 1s;
+                animation-iteration-count:infinite;
+                animation-direction:alternate;
+                animation-timing-function: ease-in; 
+            }
+            @keyframes bouncing{
+                from{
+                    transform: translateY(0px,0px);
+                }
+                to{
+                    transform: translate(0px,500px);
+                }    
+            }
+            .a{
+                background-color: rebeccapurple;
+            }
+            .b{
+                animation-delay: 0.1s;
+                background-color: #FF8C00;
+            }
+            .c{
+                animation-delay: 0.2s;
+                background-color: #FA8072;
+            }
+            .d{
+                animation-delay: 0.3s;
+                background-color: #00FFFF;
+            }
+            .e{
+                animation-delay: 0.4s;
+                background-color: #DC143C;
+            }
+            .f{
+                animation-delay: 0.5s;
+                background-color: #8B008B;
+            }
+        </style>
+        <title>Bouncing Ball Animation in CSS3</title>
+    </head>
+    <body>
+        <div class="comman a">A</div>
+        <div class="comman b">B</div>
+        <span class="comman c">C</span>
+        <span class="comman d">D</span>
+        <span class="comman e">E</span>
+        <span class="comman f">F</span>
+    </body>
+</html>
